@@ -39,6 +39,7 @@ changes in the future.***
 ### 1. Final report.
 - Weight: 20% of assignment mark
 - Length: ~10 pages (~2500 words) in Times New Roman 12-point font
+
 Your final report should include the following information:
   - Illustrations of your final implementation, using new screenshots
   - The results of the evaluation of your design:
