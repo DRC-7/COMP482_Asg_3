@@ -39,6 +39,16 @@ changes in the future.
 ### 1. Final report.
 - Weight: 20% of assignment mark
 - Length: ~10 pages (~2500 words) in Times New Roman 12-point font
+Your final report should include the following information:
+  - Illustrations of your final implementation, using new screenshots
+  - The results of the evaluation of your design:
+  - List the problems detected, categorized by heuristics. Include a severity rating of
+the problems noted.
+  - Summarize the main findings of your heuristic evaluation.
+  - Final design rationale and discussion of the state of your design. Discuss the quality of
+your system design. What parts of the design work well, and what still needs
+improvement? Do you really believe that the system would work well for your identified
+users and tasks?
 
 ### 2. A zip file containing the complete implementation of your project.
 
