@@ -1,5 +1,3 @@
-# COMP482 - HCI Assignment 3
-
 ## System Implementation and Evaluation
 Weight: 20% of your final grade
 
