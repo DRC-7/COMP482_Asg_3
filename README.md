@@ -24,7 +24,7 @@ Whiteside (Eds.), Proceedings of the SIGCHI Conference on Human Factors in Compu
 Systems: Empowering People. New York: ACM. doi:10.1145/97243.97281. Retrieved from
 https://0-doi-org.aupac.lib.athabascau.ca/10.1145/97243.97281
 
-The actual prototype implementation should include and demonstrate how the following are
+ ***The actual prototype implementation should include and demonstrate how the following are
 addressed in your design: screens, error messages, handling of unexpected input, defaults,
 robustness, and others. The main aim of the prototype is to show that how the interface is designed
 and how it conforms to the main HCI design principles and guidelines; therefore, it is fine if you use
@@ -32,7 +32,7 @@ dummy functionality stubs in your implementation instead of the actual functiona
 Once the prototype implementation is completed, you will need to evaluate it. You can do this by
 providing argumentation on how well your design follows standard HCI design principles. This
 should highlight the pros and cons of your design, and include recommendations for possible
-changes in the future.
+changes in the future.***
 
 ## Deliverables
 
