@@ -52,3 +52,17 @@ have been used. The interface must be reproducible by your tutor.
 
 - Weight: 40% of assignment mark
 - Length: ~10 minutes
+
+In addition to the written report and the zip file, you will need to prepare a 10-min-long video
+presentation on your system and upload it to YouTube. The link to this video will need to be
+included at the end of the written report and submitted to the course tutor for marking. The video
+presentation will need to include the following information:
+• the project scope and purpose of design
+• the main tasks that are covered in the interface
+• description of how walkthroughs were performed
+• details of how different low-fidelity prototypes were developed and evaluated
+• brief overview of the implementation technologies used
+• discussion on the design rationale of your interface
+• screenshots of your designed interface
+
+You can use CamStudio (http://camstudio.org/) for this purpose.
