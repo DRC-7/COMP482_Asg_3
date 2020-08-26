@@ -10,7 +10,8 @@ The main purpose is to give you experience in applying some of the design concep
 learned from the course content in actual implementation, and to give you experience in developing
 a moderately sized and robust user interface.
 
-Required Reading:
+Required Reading
+
 Your evaluation should be based on a heuristic evaluation of user interfaces. In order to fully
 understand this approach and how to perform the evaluation as expected, you will need to read this
 paper:
