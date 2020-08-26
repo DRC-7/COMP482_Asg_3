@@ -41,12 +41,15 @@ Weight: 20% of assignment mark
 Length: ~10 pages (~2500 words) in Times New Roman 12-point font
 
 2. A zip file containing the complete implementation of your project.
+
 Weight: 40% of assignment mark
+
 This must include a README file containing any special instructions for using the system (e.g.,
 login names / passwords / things to input as data as part of the interface and installation guides).
 The zip file should also contain all of the source code and the required additional packages that
 have been used. The interface must be reproducible by your tutor.
 
 3. Video.
+
 Weight: 40% of assignment mark
 Length: ~10 minutes
