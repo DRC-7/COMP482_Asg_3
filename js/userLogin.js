@@ -1,6 +1,6 @@
 //
-//JS Retrieved From:
-//https://codepen.io/ehermanson/details/KwKWEv
+//  Sign - Up / Login Form Retrieved From:
+//  https: //codepen.io/ehermanson/details/KwKWEv
 //
 
 $('.form').find('input, textarea').on('keyup blur focus', function (e) {
