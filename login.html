@@ -32,6 +32,7 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="css/mainPage.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
 </head>
 
 <body>
@@ -73,61 +74,53 @@
         </div>
     </nav>
 
-    <main role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col">
 
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">Welcome to Recreation Facility!</h1>
-                <p>Eum in pariatur eu ut. Culpa eaque illum. Adipisci. Adipisci velit totam. Occaecat unde nemo magni
-                    mollit. Velitesse irure for officia and duis aliquam. Nemo molestiae duis. Mollit dolore yet nihil
-                    adipisci.</p>
-                <p><a class="btn btn-primary btn-lg" href="login.html" role="button">Log In or Sign Up Now!
-                        &raquo;</a></p>
+                <body class="text-center">
+                    <form class="form-signin">
+                        <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 font-weight-normal">Sign in to your account</h1>
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required
+                            autofocus>
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    </form>
+                </body>
+            </div>
+            <div class="col">
+
+                <body class="text-center">
+                    <form class="form-signin">
+                        <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 font-weight-normal">New to the facility?</h1>
+                        <button class="btn btn-lg btn-primary btn-block"><a href='registration.html'>
+                                Create a New Account</button>
+
+                    </form>
+                </body>
             </div>
         </div>
+    </div>
+</body>
 
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Facility Details</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                        magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Reserve Your Spot!</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                        magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Account Details</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                        ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-            </div>
 
-            <hr>
-
-        </div> <!-- /container -->
-
-    </main>
-
-    <footer class="container">
-        <p>&copy; Company 2017-2020</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script>
-        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-    </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+<footer class="container">
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </html>
