@@ -73,7 +73,7 @@
         </div>
     </nav>
     <div class="container">
-        <h1>Create Your New Account!</h1>
+        <h1>Create New Account</h1>
         <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -111,16 +111,16 @@
                     </select>
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputState">Province</label>
-                    <select id="inputState" class="form-control">
+                    <label for="inputProvince">Province</label>
+                    <select id="inputProvince" class="form-control">
                         <option selected>Choose...</option>
                         <option>Alberta</option>
                         <option>Other</option>
                     </select>
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputZip">Postal Code</label>
-                    <input type="text" class="form-control" id="inputZip" placeholder="A1A 2B2">
+                    <label for="inputPostalCode">Postal Code</label>
+                    <input type="text" class="form-control" id="inputPostalCode" placeholder="A1A 2B2">
                 </div>
             </div>
             <div class="form-group">
@@ -131,7 +131,7 @@
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button id="createAccount" type="submit" class="btn btn-primary">Create Account</button>
         </form>
     </div>
 
@@ -144,5 +144,6 @@
         window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/functions.js"></script>
 
 </html>
