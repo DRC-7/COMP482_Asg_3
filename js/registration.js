@@ -1,9 +1,13 @@
-//Create Account Button
+//Event handler for the "Create Account" button click
 document.querySelector('#createAccount').addEventListener('click', (e) => {
     e.preventDefault();
+    //console.log(e)
+    setUserInfo(e);
+    checkLocalStorage();
+});
 
-    console.log(e)
-
+//Populates localStorage with the entered information
+function setUserInfo(e) {
     let firstName = e.target.form[0].value;
     localStorage.setItem('FirstName', firstName);
 
@@ -27,15 +31,23 @@ document.querySelector('#createAccount').addEventListener('click', (e) => {
 
     let postalcode = e.target.form[7].value;
     localStorage.setItem('PostalCode', postalcode);
+}
 
-    console.log(firstName)
-    console.log(lastName)
-    console.log(email)
-    console.log(password)
-    console.log(address)
-    console.log(city)
-    console.log(province)
-    console.log(postalcode)
+//Checks to see if localStorage is empty
+function checkLocalStorage() {
 
+    //Doesn't fail as long as they enter a first name
+    if (localStorage.getItem('FirstName') !== "") {
+        //console.log("Has Info")
 
-});
+        alert("\nThank You For Registering!\n\nYou will now be redirected back to the main page.")
+
+        //Clicking "Ok" on the alert redirects back to the homepage.
+        window.location = '../COMP482_Asg_3/index.html';
+
+    } else {
+        //console.log("Empty")
+
+        alert("\nThis Form Is Not Complete.\n\nPlease fill it out to continue.")
+    }
+}

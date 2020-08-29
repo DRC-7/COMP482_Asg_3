@@ -44,7 +44,7 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <!--<li class="nav-item">
@@ -66,10 +66,10 @@
                     </div>
                 </li>-->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <span id="loggedIn" class="navbar-text">
+                <a class="nav-link active"></a>
+            </span>
+            <button id="logoutBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
         </div>
     </nav>
 
@@ -82,12 +82,14 @@
                 <p>Eum in pariatur eu ut. Culpa eaque illum. Adipisci. Adipisci velit totam. Occaecat unde nemo magni
                     mollit. Velitesse irure for officia and duis aliquam. Nemo molestiae duis. Mollit dolore yet nihil
                     adipisci.</p>
-                <p><a class="btn btn-primary btn-lg" href="login.html" role="button">Log In or Sign Up Now!
+                <p><a id="loginBtn" class="btn btn-primary btn-lg" href="login.html" role="button">Log In or Sign Up
+                        Now!
                         &raquo;</a></p>
             </div>
         </div>
 
         <div class="container">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button><br>
             <!-- Example row of columns -->
             <div class="row">
                 <div class="col-md-4">
@@ -129,5 +131,7 @@
         window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/waivers.js"></script>
 
 </html>
