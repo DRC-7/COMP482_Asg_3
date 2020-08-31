@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Jumbotron Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/mainPage.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Recreation Facility</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <span id="loggedIn" class="navbar-text">
+                <a class="nav-link active"></a>
+            </span>
+            <button id="logoutBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="container">
+            <br>
+            <h2>Online Waiver</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="John">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputLastName">Last Name</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Smith">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputDOB">Date Of Birth</label>
+                        <input class="form-control" type="date" value="yyyy-MM-dd" id="example-date-input">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputState">City</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Athabasca</option>
+                            <option>Calgary</option>
+                            <option>Edmonton</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputProvince">Province</label>
+                        <select id="inputProvince" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Alberta</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputPostalCode">Postal Code</label>
+                        <input type="text" class="form-control" id="inputPostalCode" placeholder="A1A 2B2">
+                    </div>
+                    <div class="container">
+                        <p>I agree to the following:</p>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> COVID-19 Guidelines</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> Privacy Policy</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> Terms and Conditions</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <a href="waiverConfirm.html"><button id="submitWaiver" type="submit" class="btn btn-primary">Submit
+                    Waiver</button></a>
+        </div>
+
+    </main>
+
+    <footer class="container">
+        <p></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+
+</html>
