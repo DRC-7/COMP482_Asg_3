@@ -56,34 +56,45 @@
     </nav>
 
     <main role="main">
-        <div class='container'>
-            <div class="py-5 text-center">
-                <div class="py-5 text-center">
-                    <h2>Bookable Spaces</h2>
-                    <p>Please select the space you wish to make a reservation for:</p>
-                </div>
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <div class="alert alert-success" role="alert">
+                <h1 class="alert-heading">Thank You!</h1>
+                <hr>
+                <h4>Order Confirmation #12345-ABC-890</h4>
+                <hr>
+                <h4>Reserved spot for:</h4>
+                <div id="confirmation"></div>
             </div>
+            <br>
+            <br>
         </div>
-        <div id="allSpaces" class='container'>
-            <p><button type="button" class="btn btn-primary btn">Basketball Court</button>
-            </p>
-            <p><button type="button" class="btn btn-primary btn">Climbing Wall</button></p>
-            <p><button type="button" class="btn btn-primary btn">Hockey Rink</button></p>
-            <p><button type="button" class="btn btn-primary btn">Multi-Purpose Room</button>
-            </p>
-            <p><button type="button" class="btn btn-primary btn">Swimming Pool</button></p>
-            <p><button type="button" class="btn btn-primary btn">Weight Room</button></p>
+        <div class="container">
+            <br>
+            <p>This page will redirect after 10 seconds...</p>
+            <p>Click here to <a href='index.html'>force redirect</a></p>
+            <br>
         </div>
     </main>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script>
-        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-    </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/reserve.js"></script>
+</body>
+<footer></footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/timeReserve.js"></script>
+<script src="js/resConfirm.js"></script>
+<script>
+    setTimeout(function () {
+        window.location.href = '../COMP482_Asg_3/index.html';
+    }, 10000);
+</script>
+
 
 </html>

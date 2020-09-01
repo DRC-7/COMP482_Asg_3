@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         loggedOutState();
     });
 
-});
+})
 
 function loggedInState() {
     let loggedInText = "Logged In As: ";
