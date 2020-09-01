@@ -56,17 +56,108 @@
     </nav>
 
     <main role="main">
-
+        <div class='container'>
+            <div class="py-5 text-center">
+                <div class="py-5 text-center">
+                    <div id='spaceName'></div>
+                </div>
+            </div>
+            <div class='container'>
+                <div class="form-group col-md-6">
+                    <p>Please select a date to view the available times for that day:</p>
+                    <form>
+                        <label for="inputDate">Date Selection</label>
+                        <input class="form-control" type="date" value="yyyy-MM-dd" id="example-date-input">
+                        <br>
+                        <button type="button" class="btn btn-primary btn">Show Times</button>
+                    </form>
+                </div>
+                <div id="timeslotSection" style="display:none;">
+                    <!--Space for the date selected as part of the screen-->
+                    <div id="dateSelected"></div>
+                    <div id="timeslots" class='container'>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Max Duration</th>
+                                    <th scope="col">Available Spots</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>6:00 AM</th>
+                                    <td>2 Hours</td>
+                                    <td>0</td>
+                                    <td><button id="selection" type="button" class="btn disabled">Select Time</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>8:00 AM</th>
+                                    <td>2 Hours</td>
+                                    <td>10+</td>
+                                    <td><button type="button" class="btn btn-primary btn" value="8:00AM">Select
+                                            Time</button></td>
+                                </tr>
+                                <tr>
+                                    <th>10:00 AM</th>
+                                    <td>2 Hours</td>
+                                    <td>8</td>
+                                    <td><button type="button" class="btn btn-primary btn" value="10:00AM">Select
+                                            Time</button></td>
+                                </tr>
+                                <tr>
+                                    <th>12:00 PM</th>
+                                    <td>2 Hours</td>
+                                    <td>6</td>
+                                    <td><button type="button" class="btn btn-primary btn" value="12:00PM">Select
+                                            Time</button></td>
+                                </tr>
+                                <tr>
+                                    <th>1:00 PM</th>
+                                    <td>2 Hours</td>
+                                    <td>0</td>
+                                    <td><button type="button" class="btn disabled" value="1:00PM">Select Time</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>3:00 PM</th>
+                                    <td>2 Hours</td>
+                                    <td>2</td>
+                                    <td><button type="button" class="btn btn-primary btn" value="3:00PM">Select
+                                            Time</button></td>
+                                </tr>
+                                <tr>
+                                    <th>5:00 PM</th>
+                                    <td>2 Hours</td>
+                                    <td>7</td>
+                                    <td><button type="button" class="btn btn-primary btn" value="5:00PM">Select
+                                            Time</button></td>
+                                </tr>
+                                <tr>
+                                    <th>7:00 PM</th>
+                                    <td>2 Hours</td>
+                                    <td>10+</td>
+                                    <td><button type="button" class="btn btn-primary btn" value="7:00PM">Select
+                                            Time</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
     </main>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script>
-        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-    </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/reserve.js"></script>
+</body>
+<footer></footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/timeReserve.js"></script>
 
 </html>

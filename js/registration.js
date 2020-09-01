@@ -4,9 +4,11 @@ document.querySelector('#createAccount').addEventListener('click', (e) => {
     //console.log(e)
     setUserInfo(e);
     checkLocalStorage();
-});
+    createAccountObj(e);
+})
 
 //Populates localStorage with the entered information
+//REMOVE THIS LATER AND IMPLEMENT THE OBJECT
 function setUserInfo(e) {
     let firstName = e.target.form[0].value;
     localStorage.setItem('FirstName', firstName);
@@ -31,6 +33,23 @@ function setUserInfo(e) {
 
     let postalcode = e.target.form[7].value;
     localStorage.setItem('PostalCode', postalcode);
+}
+
+//Creates a Account Object and stores it in localStorage
+//NEED TO IMPLEMENT THIS LATER
+function createAccountObj(e) {
+    let account = {
+        FirstName: e.target.form[0].value,
+        LastName: e.target.form[1].value,
+        Email: e.target.form[2].value,
+        Pass: e.target.form[3].value,
+        Addr: e.target.form[4].value,
+        City: e.target.form[5].value,
+        Province: e.target.form[6].value,
+        PCode: e.target.form[7].value
+    }
+
+    localStorage.setItem('UserAccount', JSON.stringify(account));
 }
 
 //Checks to see if localStorage is empty

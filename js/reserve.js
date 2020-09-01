@@ -2,9 +2,10 @@ let SPACE_SELECTED;
 
 document.addEventListener('DOMContentLoaded', function () {
     getNameOfClick();
+    addSpaceName();
 })
 
-//Get the name of the space that the user clicks on.
+//Get the name of the space that the user clicks on then changes the page
 function getNameOfClick() {
 
     let parent = document.getElementById('allSpaces');
