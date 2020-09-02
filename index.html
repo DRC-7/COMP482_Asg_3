@@ -149,6 +149,20 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/loggedIn.js"></script>
+    <script>
+        let staticUser = {
+            FirstName: "Mike",
+            LastName: "Procter",
+            Email: "mike.procter@email.com",
+            Pass: "qwerty123",
+            Addr: "555 St Ave Blvd SE",
+            City: "Other",
+            Province: "Alberta",
+            PCode: "G5H 1M2"
+        }
+
+        localStorage.setItem('StaticUser', JSON.stringify(staticUser));
+    </script>
 </body>
 
 </html>

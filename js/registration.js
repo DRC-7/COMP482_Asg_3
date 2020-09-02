@@ -59,10 +59,10 @@ function checkLocalStorage() {
     if (localStorage.getItem('FirstName') !== "") {
         //console.log("Has Info")
 
-        alert("\nThank You For Registering!\n\nYou will now be redirected back to the main page.")
+        //alert("\nThank You For Registering!\n\nYou will now be redirected back to the main page.")
 
         //Clicking "Ok" on the alert redirects back to the homepage.
-        window.location = '../COMP482_Asg_3/index.html';
+        window.location = '../COMP482_Asg_3/regisConfirm.html';
 
     } else {
         //console.log("Empty")
