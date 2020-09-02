@@ -1,5 +1,4 @@
-let SPACE_SELECTED;
-
+//Event handler to get the name of the space selected 
 document.addEventListener('DOMContentLoaded', function () {
     getNameOfClick();
     addSpaceName();
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Get the name of the space that the user clicks on then changes the page
 function getNameOfClick() {
-
     let parent = document.getElementById('allSpaces');
 
     parent.addEventListener('click', (e) => {
