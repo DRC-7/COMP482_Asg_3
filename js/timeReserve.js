@@ -1,8 +1,9 @@
-//Waits for the page to load then executes
+//Event handling for when the page loads load then executes
 document.addEventListener('DOMContentLoaded', function () {
     addSpaceName();
 })
 
+//Event handling to get the available times for a given date
 document.querySelector('form button').addEventListener('click', (e) => {
     //console.log(e.target.form[0].value)
     if (e.target.form[0].value === "") {
@@ -14,7 +15,7 @@ document.querySelector('form button').addEventListener('click', (e) => {
     }
 })
 
-//Takes the name of the space from local storage and adds it to the title.
+//Takes the name of the space from local storage and adds it to the title
 function addSpaceName() {
     let string = "Booking Time Slots:"
     let spaceName = localStorage.getItem('Space');
@@ -25,6 +26,7 @@ function addSpaceName() {
     newItem.innerHTML = string + " " + spaceName;
 }
 
+//Displays the line that shows the date selected
 function showTimes(e) {
     let string = "Showing Times For:"
     let dateSelection = e.target.form[0].value;
@@ -47,7 +49,7 @@ function showTimeSlots() {
     section.style.display = "block";
 }
 
-//Event handling for time selection buttons
+//Addes event handling for each individual time selection buttons
 function selectButtonEvent() {
     //Selects all of the table buttons
     let list = document.querySelectorAll('td .btn');
