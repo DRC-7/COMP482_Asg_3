@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Jumbotron Template · Bootstrap</title>
+    <title>Recreation Facility</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
@@ -97,22 +97,32 @@
             <!-- Example row of columns -->
             <div class="row">
                 <div class="col-md-4">
-                    <h2>New Covid-19 Guidelines</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Read the update &raquo;</a></p>
+                    <h2>Covid-19 Waivers</h2>
+                    <p>Due to new guidelines and risks associated with using public facilities. We have updated our
+                        waivers.</p>
+                    <p>Login or Sign Up to use our new online system to fill the waivers out at your convenience.</p>
+                    <p id='menuBtn' style="display:none;"><a class="btn btn-secondary" href="waiver.html"
+                            role="button">Fill Out Waivers
+                            &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2>Plan your visit in advance!</h2>
+                    <h2>New Online Bookings!</h2>
                     <p>If you're planning to visit, we have a new feature that lets you see all of the available
-                        openings at the facility. You
-                        can book your visit in advance and skip the crowds!</p>
-                    <p><a class="btn btn-secondary" href="reserve.html" role="button">Reserve Now! &raquo;</a></p>
+                        openings at the facility.</p>
+                    <p>Login or Sign Up to reserve your spot online and skip the crowds!</p>
+                    <p id='menuBtn' style="display:none;"><a class="btn btn-secondary" href="reserve.html"
+                            role="button">Reserve A Spot!
+                            &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2>About Us</h2>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum tortor ac tempus tempus.
+                    </p>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
                         condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="reserve.html" role="button">View details &raquo;</a></p>
+                    <p id='menuBtn' style="display:none;"><a class="btn btn-secondary" href="reserve.html"
+                            role="button">rutrum tortor
+                            &raquo;</a></p>
                 </div>
             </div>
 
@@ -122,8 +132,13 @@
 
     </main>
 
-    <footer class="container">
-        <p>&copy; Company 2017-2020</p>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Recreation Facility</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -133,5 +148,21 @@
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/loggedIn.js"></script>
+    <script>
+        let staticUser = {
+            FirstName: "Mike",
+            LastName: "Procter",
+            Email: "mike.procter@email.com",
+            Pass: "qwerty123",
+            Addr: "555 St Ave Blvd SE",
+            City: "Other",
+            Province: "Alberta",
+            PCode: "G5H 1M2"
+        }
+
+        localStorage.setItem('StaticUser', JSON.stringify(staticUser));
+    </script>
+</body>
 
 </html>
