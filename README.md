@@ -1,5 +1,5 @@
 # Implementation of a Online 'Recreation Facility' Website
-### Assignment 3 - COMP 482: HCI
+Assignment 3 - COMP 482: HCI
 
 ## Challenge
 Using a lo-fi prototype created in a previous assignment as a guiding point, implement the system.
@@ -12,7 +12,7 @@ Even with the lo-fi protoype from the first assignment this was a challenge. The
 
 Creating HTML from scratch would have been too difficult, and so I wanted to use Bootstrap since it provides a very well documented HTML/CSS framework.
 
-Without a backend somethings might be a challenge since only HTML/CSS and vanilla JavaScript is being used.
+Without a backend some things might challenging since I'm only using HTML/CSS and vanilla JavaScript.
 
 ## Approach For The Implementation
 
@@ -37,15 +37,15 @@ Without a backend somethings might be a challenge since only HTML/CSS and vanill
   - Prompts and Alerts
 
 5. A third pass through the system to highlight any areas that have missing error handling or unclear user expectations.
-  - Icons that are "known" to be clicked
+  - Icons that aren't "known" to be clicked
   - Attempts to submit empty forms
 
-6. Final pass of the system. Remember that it's not suppose to be perfect since it's an implementation of the first assignment. Focus here is to identify the design or usability issues, and document them to write in the paper.
+6. Final pass of the system. Remember that it's not suppose to be perfect since it's an implementation of the first assignment. Focus here is to identify the design or usability issues, and document them to write it in the assignment paper.
 
 ## Thoughts Post-Implementation
-Was actually very challenging since all of the flaws really stand out to me. The assignment isn't attempting to make it perfect (as clarified by Mike in email) but being nit picky I do see a lot of changes that I would make still.
+Was actually very challenging (or easier?) since all of the flaws stick out to me. The assignment isn't attempting to make it perfect (as clarified by Mike in email) but being nit picky I do see a lot of changes that I would make still - I guess that helps for the paper.
 
-Initially starting this website was very hard. Case of analysis paralysis the first few days.
+Initially starting this website was very hard. Bad case of analysis paralysis the first few days.
 
 Programming this was quite challenging, albeit the Bootstrap documentation makes it simpler to mark up the HTML/CSS as opposed to me creating it. My basic understanding of JS was definitely challenged here.
 
