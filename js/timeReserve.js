@@ -70,7 +70,7 @@ function selectButtonEvent() {
                     Time: selectedTime
                 };
                 localStorage.setItem('Reservation', JSON.stringify(reservationObj));
-                window.location = '../COMP482_Asg_3/resConfirm.html'
+                window.location = '../html/resConfirm.html'
             }
 
         })

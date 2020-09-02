@@ -105,3 +105,13 @@ function hideMenuButtons() {
         b.style.display = "none";
     }
 }
+
+//Show Login or Sign Up prompt
+function showPrompt() {
+
+}
+
+//Hide Login or Sign Up prompt
+function hidePrompt() {
+
+}

@@ -17,7 +17,7 @@ function getNameOfClick() {
             let spaceSelected = e.target.innerHTML;
             localStorage.setItem('Space', spaceSelected);
 
-            window.location = '../COMP482_Asg_3/timeReserve.html';
+            window.location = '../html/timeReserve.html';
         }
     })
 }

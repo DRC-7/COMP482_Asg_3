@@ -62,7 +62,7 @@ function checkLocalStorage() {
         //alert("\nThank You For Registering!\n\nYou will now be redirected back to the main page.")
 
         //Clicking "Ok" on the alert redirects back to the homepage.
-        window.location = '../COMP482_Asg_3/regisConfirm.html';
+        window.location = '../html/regisConfirm.html';
 
     } else {
         //console.log("Empty")
