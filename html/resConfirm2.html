@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -31,7 +31,7 @@
         }
     </style>
     <!-- Custom styles for this template -->
-    <link href="css/mainPage.css" rel="stylesheet">
+    <link href="../css/mainPage.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <span id="loggedIn" class="navbar-text">
@@ -60,48 +60,47 @@
             <br>
             <br>
             <br>
-            <div class="alert alert-warning" role="alert">
-                <h1 class="alert-heading">Confirm booking For:</h1>
+            <div class="alert alert-success" role="alert">
+                <h1 class="alert-heading">Thank You!</h1>
                 <hr>
+                <h4>Order Confirmation #12345-ABC-890</h4>
+                <hr>
+                <h4>Reserved spot for:</h4>
                 <div id="confirmation"></div>
             </div>
-            <br>
-            <br>
-        </div>
-        <div class="container">
-            <h4>Confirm?</h4>
-            <br>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <a href="payment.html"><button id="continuePayment" type="submit" class="btn btn-primary">
-                            Yes, Continue To Payment</button>
-                </div>
-                <div class="form-group col-md-6">
-                    <a href="reserve.html"><button id="newWaiver" type="submit" class="btn btn-primary">No,
-                            Restart</button>
-                </div>
+            <div class="alert alert-secondary" role="alert">
+                <p>This page will redirect after 15 seconds, if it doesn't <a href='../index.html'>click here to force
+                        redirect</a>
+                </p>
             </div>
         </div>
-    </main>
-</body>
-<footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2020 Recreation Facility</p>
-    <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Privacy</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Support</a></li>
-    </ul>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script>
-    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-</script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/login.js"></script>
-<script src="js/timeReserve.js"></script>
-<script src="js/resConfirm.js"></script>
 
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Recreation Facility</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/timeReserve.js"></script>
+    <script src="../js/resConfirm.js"></script>
+    <script>
+        setTimeout(function () {
+            window.location.href = '../index.html';
+        }, 15000);
+    </script>
+
+</body>
 
 </html>

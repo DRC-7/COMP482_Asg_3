@@ -1,3 +1,8 @@
+<!--
+    Bootstrap HTML layout retrieved from:
+    https://getbootstrap.com/docs/4.5/examples/jumbotron/
+-->
+
 <!doctype html>
 <html lang="en">
 
@@ -79,10 +84,15 @@
         <div class="jumbotron">
             <div class="container">
                 <h1 class="display-3">Welcome to Recreation Facility!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin turpis ac diam sodales,
+                    vel sodales lectus dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. </p>
                 <p>Eum in pariatur eu ut. Culpa eaque illum. Adipisci. Adipisci velit totam. Occaecat unde nemo magni
                     mollit. Velitesse irure for officia and duis aliquam. Nemo molestiae duis. Mollit dolore yet nihil
                     adipisci.</p>
-                <p><a id="loginBtn" class="btn btn-primary btn-lg" href="login.html" role="button">Log In or Sign Up
+                <br>
+                <p><a id="loginBtn" class="btn btn-primary btn-lg" href="html/login.html" role="button">Log In or Sign
+                        Up
                         Now!
                         &raquo;</a></p>
             </div>
@@ -100,17 +110,19 @@
                     <h2>Covid-19 Waivers</h2>
                     <p>Due to new guidelines and risks associated with using public facilities. We have updated our
                         waivers.</p>
-                    <p>Login or Sign Up to use our new online system to fill the waivers out at your convenience.</p>
-                    <p id='menuBtn' style="display:none;"><a class="btn btn-secondary" href="waiver.html"
-                            role="button">Fill Out Waivers
+                    <p id="prompt">Login or Sign Up to use our new online system to fill the waivers out at your
+                        convenience.</p>
+                    <p id='menuBtn' style="display:none;"><a class="btn btn-info" href="html/waiver.html"
+                            role="button">Fill
+                            Out Waivers
                             &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
                     <h2>New Online Bookings!</h2>
                     <p>If you're planning to visit, we have a new feature that lets you see all of the available
                         openings at the facility.</p>
-                    <p>Login or Sign Up to reserve your spot online and skip the crowds!</p>
-                    <p id='menuBtn' style="display:none;"><a class="btn btn-secondary" href="reserve.html"
+                    <p id="prompt">Login or Sign Up to reserve your spot online and skip the crowds!</p>
+                    <p id='menuBtn' style="display:none;"><a class="btn btn-info" href="html/reserve.html"
                             role="button">Reserve A Spot!
                             &raquo;</a></p>
                 </div>
@@ -118,10 +130,9 @@
                     <h2>Lorem Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum tortor ac tempus tempus.
                     </p>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    <p id="prompt">Login or Sign Up
                         condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p id='menuBtn' style="display:none;"><a class="btn btn-secondary" href="reserve.html"
-                            role="button">rutrum tortor
+                    <p id='menuBtn' style="display:none;"><a class="btn btn-info" href="" role="button">rutrum tortor
                             &raquo;</a></p>
                 </div>
             </div>
@@ -153,7 +164,7 @@
         let staticUser = {
             FirstName: "Mike",
             LastName: "Procter",
-            Email: "mike.procter@email.com",
+            Email: "mp@email.com",
             Pass: "qwerty123",
             Addr: "555 St Ave Blvd SE",
             City: "Other",

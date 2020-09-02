@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -31,7 +31,7 @@
         }
     </style>
     <!-- Custom styles for this template -->
-    <link href="css/mainPage.css" rel="stylesheet">
+    <link href="../css/mainPage.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <span id="loggedIn" class="navbar-text">
@@ -56,48 +56,36 @@
     </nav>
 
     <main role="main">
-        <div class="container">
-            <br>
-            <br>
-            <br>
-            <div class="alert alert-success" role="alert">
-                <h1 class="alert-heading">Registered!</h1>
-                <hr>
-                <h4>Your account has been created.</h4>
-                <hr>
-                <div id="confirmation"></div>
+        <div class='container'>
+            <div class="py-5 text-center">
+                <div class="py-5 text-center">
+                    <h2>Bookable Spaces</h2>
+                    <p>Please select the space you wish to make a reservation for:</p>
+                </div>
             </div>
-            <div class="alert alert-secondary" role="alert">
-                <p>This page will redirect after 5 seconds, if it doesn't <a href='index.html'>click here to force
-                        redirect</a>
-                </p>
-            </div>
-            <br>
-            <br>
+        </div>
+        <div id="allSpaces" class='container'>
+            <p><button type="button" class="btn btn-secondary btn-lg btn-block">Basketball Court</button>
+            </p>
+            <p><button type="button" class="btn btn-secondary btn-lg btn-block">Climbing Wall</button></p>
+            <p><button type="button" class="btn btn-secondary btn-lg btn-block">Hockey Rink</button></p>
+            <p><button type="button" class="btn btn-secondary btn-lg btn-block">Multi-Purpose Room</button>
+            </p>
+            <p><button type="button" class="btn btn-secondary btn-lg btn-block">Swimming Pool</button></p>
+            <p><button type="button" class="btn btn-secondary btn-lg btn-block">Weight Room</button></p>
         </div>
     </main>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/reserve.js"></script>
 </body>
-<footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2020 Recreation Facility</p>
-    <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Privacy</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Support</a></li>
-    </ul>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script>
-    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-</script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/login.js"></script>
-<script>
-    setTimeout(function () {
-        window.location.href = '../COMP482_Asg_3/index.html';
-    }, 5000);
-</script>
-
 
 </html>
