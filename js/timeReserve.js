@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.querySelector('form button').addEventListener('click', (e) => {
     //console.log(e.target.form[0].value)
     if (e.target.form[0].value === "") {
-        alert("Please Select A Date To Show Times");
+        alert("Please Select A Date To Show Times.");
     } else {
         showTimes(e);
         showTimeSlots();
@@ -58,7 +58,7 @@ function selectButtonEvent() {
         l.addEventListener('click', (e) => {
             console.log(e);
             if (e.target.value === "") {
-                alert("This Time Slot Is Full. Please Choose Another.");
+                alert("This Time Slot Is Full.\nPlease Choose Another.");
             } else {
 
                 let selectedTime = e.target.value;

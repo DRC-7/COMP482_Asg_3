@@ -24,7 +24,7 @@ function loggedInState() {
 
     hideLoginButton();
     showLogoutButton();
-    showWaiverButton();
+    //showWaiverButton();
     myState();
 }
 
