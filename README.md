@@ -1,76 +1,58 @@
-## System Implementation and Evaluation
-Weight: 20% of your final grade
+# Implementation of a Online 'Recreation Facility' Website
+### Assignment 3 - COMP 482: HCI
 
-Due: after Unit 6 in Week 17
+## Challenge
+Using a lo-fi prototype created in a previous assignment as a guiding point, implement the system.
 
-In this assignment, you will implement the low-fidelity prototype system that you designed in
-Assignment 1.
+- Create a functional implementation of the prototype
+- Create a user interface using design concepts
 
-The main purpose is to give you experience in applying some of the design concepts you have
-learned from the course content in actual implementation, and to give you experience in developing
-a moderately sized and robust user interface.
+## Thoughts Pre-Implementation
+Even with the lo-fi protoype from the first assignment this was a challenge. The requirements for this assignment initially seemed as though it needed to be a perfect implementation that followed and applied all the HCI design principles and concepts - though that was not the case. This assignment was just an iterative jump from a lo-fi prototype to a rough hi-fi prototype with some functionality attached to it.
 
-Required Reading
+Creating HTML from scratch would have been too difficult, and so I wanted to use Bootstrap since it provides a very well documented HTML/CSS framework.
 
-Your evaluation should be based on a heuristic evaluation of user interfaces. In order to fully
-understand this approach and how to perform the evaluation as expected, you will need to read this
-paper:
+Without a backend somethings might be a challenge since only HTML/CSS and vanilla JavaScript is being used.
 
-Nielsen, J., & Molich, R. (1990). Heuristic evaluation of user interfaces. In J. C. Chew & J.
-Whiteside (Eds.), Proceedings of the SIGCHI Conference on Human Factors in Computing
-Systems: Empowering People. New York: ACM. doi:10.1145/97243.97281. Retrieved from
-https://0-doi-org.aupac.lib.athabascau.ca/10.1145/97243.97281
+## Approach For The Implementation
 
- ***The actual prototype implementation should include and demonstrate how the following are
-addressed in your design: screens, error messages, handling of unexpected input, defaults,
-robustness, and others. The main aim of the prototype is to show that how the interface is designed
-and how it conforms to the main HCI design principles and guidelines; therefore, it is fine if you use
-dummy functionality stubs in your implementation instead of the actual functionality.
-Once the prototype implementation is completed, you will need to evaluate it. You can do this by
-providing argumentation on how well your design follows standard HCI design principles. This
-should highlight the pros and cons of your design, and include recommendations for possible
-changes in the future.***
+1. Identify the ideal user path, assuming a perfect user, to create a basic functional implementation that outlines the interaction in the simplest way possible.
 
-## Deliverables
+1. Find Bootstrap documentation for elements that I want by comparing them to my lo-fi prototype:
+  - Basic navigation bar
+  - Basic page layout (grids, columns tables)
+  - Buttons and forms
+  - Colour coded items for contrast
 
-### 1. Final report.
-- Weight: 20% of assignment mark
-- Length: ~10 pages (~2500 words) in Times New Roman 12-point font
+3. Using the lo-fi prototype I worked through each of the user stories (6 total). After implementing each user story, I was able to check the functionality of each part of the system. 
+  - User story represented a sprint
+  - Developing it in very short sprints
+  - Testing at the end of each sprint
 
-Your final report should include the following information:
-  - Illustrations of your final implementation, using new screenshots
-  - The results of the evaluation of your design:
-  - List the problems detected, categorized by heuristics. Include a severity rating of
-the problems noted.
-  - Summarize the main findings of your heuristic evaluation.
-  - Final design rationale and discussion of the state of your design. Discuss the quality of
-your system design. What parts of the design work well, and what still needs
-improvement? Do you really believe that the system would work well for your identified
-users and tasks?
+4. A second pass of the system with a focus on design and usability to highlight the missing areas.
+  - Format
+  - Font
+  - Colour 
+  - Spacing
+  - Prompts and Alerts
 
-### 2. A zip file containing the complete implementation of your project.
+5. A third pass through the system to highlight any areas that have missing error handling or unclear user expectations.
+  - Icons that are "known" to be clicked
+  - Attempts to submit empty forms
 
-- Weight: 40% of assignment mark
-- This must include a README file containing any special instructions for using the system (e.g.,
-login names / passwords / things to input as data as part of the interface and installation guides).
-The zip file should also contain all of the source code and the required additional packages that
-have been used. The interface must be reproducible by your tutor.
+6. Final pass of the system. Remember that it's not suppose to be perfect since it's an implementation of the first assignment. Focus here is to identify the design or usability issues, and document them to write in the paper.
 
-### 3. Video.
+## Thoughts Post-Implementation
+Was actually very challenging since all of the flaws really stand out to me. The assignment isn't attempting to make it perfect (as clarified by Mike in email) but being nit picky I do see a lot of changes that I would make still.
 
-- Weight: 40% of assignment mark
-- Length: ~10 minutes
+Initially starting this website was very hard. Case of analysis paralysis the first few days.
 
-In addition to the written report and the zip file, you will need to prepare a 10-min-long video
-presentation on your system and upload it to YouTube. The link to this video will need to be
-included at the end of the written report and submitted to the course tutor for marking. The video
-presentation will need to include the following information:
-  - the project scope and purpose of design
-  - the main tasks that are covered in the interface
-  - description of how walkthroughs were performed
-  - details of how different low-fidelity prototypes were developed and evaluated
-  - brief overview of the implementation technologies used
-  - discussion on the design rationale of your interface
-  - screenshots of your designed interface
+Programming this was quite challenging, albeit the Bootstrap documentation makes it simpler to mark up the HTML/CSS as opposed to me creating it. My basic understanding of JS was definitely challenged here.
 
-You can use CamStudio (http://camstudio.org/) for this purpose.
+My programming mind is definitely rusty, the code that I wrote could be a lot cleaner and my file organization could better thought out.
+
+## Project Files
+### GitHub Repo
+https://github.com/DRC-7/COMP482_Asg_3
+### YouTube Video
+
