@@ -1,3 +1,7 @@
+//
+// Created by Douglas Chung
+//
+
 //Event handler for the "Submit Waiver" button --> Waiver.html
 document.querySelector('#submitWaiver').addEventListener('click', (e) => {
     e.preventDefault();
@@ -5,6 +9,7 @@ document.querySelector('#submitWaiver').addEventListener('click', (e) => {
     waiverForm(e);
 })
 
+//Checks to ensure that the form is filled out and redirects if it's complete
 function waiverForm(e) {
     let fName = e.target.form[0].value;
     let lName = e.target.form[1].value;

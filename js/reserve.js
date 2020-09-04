@@ -1,4 +1,8 @@
-//Event handler to get the name of the space selected 
+//
+// Created by Douglas Chung
+//
+
+//Event handler to get the name of the space selected
 document.addEventListener('DOMContentLoaded', function () {
     getNameOfClick();
     addSpaceName();

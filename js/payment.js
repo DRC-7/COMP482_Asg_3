@@ -1,3 +1,7 @@
+//
+// Created by Douglas Chung
+//
+
 //Event handler for when the page loads
 document.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault();
@@ -9,9 +13,6 @@ document.querySelector('#submitPayment').addEventListener('click', (e) => {
     e.preventDefault();
     console.log(e);
     paymentForm(e);
-
-    //Clicking "Submit Payment" on the alert redirects back to the homepage.
-    //window.location = 'resConfirm2.html';
 })
 
 //Gets information from localStorage
@@ -30,6 +31,7 @@ function addCartDetails() {
     newItem.innerHTML = name;
 }
 
+//Checks the payment and billing information form to check that it's complete
 function paymentForm(e) {
     let fName = e.target.form[0].value;
     let lName = e.target.form[1].value;
@@ -43,6 +45,8 @@ function paymentForm(e) {
     let ccNum = e.target.form[10].value;
     let ccExp = e.target.form[11].value;
     let ccSec = e.target.form[12].value;
+
+    console.log(ccNum.length)
 
     if (fName === "" ||
         lName === "" ||
