@@ -117,7 +117,7 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="country">Province</label>
-                            <select class="custom-select d-block w-100" id="country" required>
+                            <select class="custom-select d-block w-100" id="province" required>
                                 <option value="">Choose...</option>
                                 <option>Alberta</option>
                                 <option>Other</option>
@@ -128,7 +128,7 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="state">City</label>
-                            <select class="custom-select d-block w-100" id="state" required>
+                            <select class="custom-select d-block w-100" id="city" required>
                                 <option value="">Choose...</option>
                                 <option>Athabasca</option>
                                 <option>Calgary</option>
@@ -141,7 +141,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="zip">Postal Code</label>
-                            <input type="text" class="form-control" id="zip" placeholder="A1A 2B2" required>
+                            <input type="text" class="form-control" id="postalCode" placeholder="A1A 2B2" required>
                             <div class="invalid-feedback">
                                 Postal code required.
                             </div>
@@ -197,7 +197,8 @@
                         </div>
                     </div>
                     <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit Payment</button>
+                    <button id="submitPayment" class="btn btn-primary btn-lg btn-block" type="submit">Submit
+                        Payment</button>
                 </form>
             </div>
         </div>

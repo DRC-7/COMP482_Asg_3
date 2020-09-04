@@ -1,11 +1,3 @@
-// let LOGIN_STATE = false;
-
-// //Checks the status of login
-// function myState() {
-//     LOGIN_STATE = !LOGIN_STATE;
-//     return LOGIN_STATE;
-// }
-
 //Event handler to show the logged in users name
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -33,7 +25,7 @@ document.querySelector('#signIn').addEventListener('click', (e) => {
         window.location = '../index.html';
         loggedInState();
     } else {
-        alert("The Username and Password Entered are not valid.");
+        alert("The Username and/or Password Entered Is Not Valid.");
     }
 
 })
@@ -51,7 +43,7 @@ function loggedInState() {
     hideLoginButton();
     showLogoutButton();
     showMenuButtons();
-    //hidePrompt();
+    hidePrompt();
     //myState();
 }
 
@@ -60,7 +52,7 @@ function loggedOutState() {
     showLoginButton();
     hideLogoutButton();
     hideMenuButtons();
-    //showPrompt();
+    showPrompt();
     document.querySelector('#loggedIn a').innerHTML = "";
     //myState();
 }
