@@ -37,12 +37,16 @@ document.querySelector('#signIn').addEventListener('click', (e) => {
 
 //Adds the logged in information to the top right
 function loggedInState() {
-    let loggedInText = "Logged In As: ";
-
     let account = JSON.parse(localStorage.getItem('UserAccount'));
+
+    //Checks to see if there's an account created otherwise uses StaticUser
+    if (account === null) {
+        account = JSON.parse(localStorage.getItem('StaticUser'));
+    }
+
+    let loggedInText = "Logged In As: ";
     let first = account.FirstName;
     let last = account.LastName;
-
     document.querySelector('#loggedIn a').textContent = loggedInText + first + " " + last;
 
     hideLoginButton();
