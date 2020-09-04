@@ -2,7 +2,7 @@
 // Created by Douglas Chung
 //
 
-//Event handler to show the logged in users name
+//Event handler to show the logged in users name and handles the logout click
 document.addEventListener('DOMContentLoaded', function () {
     loggedInState();
 
