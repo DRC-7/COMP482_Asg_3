@@ -1,3 +1,13 @@
+<!--
+    PAYMENT PAGE
+
+    Documentation for all of the Bootstrap elements retrieved from:
+    https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+    NOTE:
+    - Every single one of the HTML pages uses index.html as a starting point. 
+    - Most of the changes between pages are found between the <main></main> tags.
+-->
 <!doctype html>
 <html lang="en">
 
@@ -35,11 +45,6 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Recreation Facility</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -117,7 +122,7 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="country">Province</label>
-                            <select class="custom-select d-block w-100" id="country" required>
+                            <select class="custom-select d-block w-100" id="province" required>
                                 <option value="">Choose...</option>
                                 <option>Alberta</option>
                                 <option>Other</option>
@@ -128,7 +133,7 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="state">City</label>
-                            <select class="custom-select d-block w-100" id="state" required>
+                            <select class="custom-select d-block w-100" id="city" required>
                                 <option value="">Choose...</option>
                                 <option>Athabasca</option>
                                 <option>Calgary</option>
@@ -141,7 +146,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="zip">Postal Code</label>
-                            <input type="text" class="form-control" id="zip" placeholder="A1A 2B2" required>
+                            <input type="text" class="form-control" id="postalCode" placeholder="A1A 2B2" required>
                             <div class="invalid-feedback">
                                 Postal code required.
                             </div>
@@ -197,7 +202,8 @@
                         </div>
                     </div>
                     <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit Payment</button>
+                    <button id="submitPayment" class="btn btn-primary btn-lg btn-block" type="submit">Submit
+                        Payment</button>
                 </form>
             </div>
         </div>

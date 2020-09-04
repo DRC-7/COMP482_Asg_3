@@ -1,3 +1,7 @@
+//
+// Created by Douglas Chung
+//
+
 //Event handler to print reservation information from localstorage
 document.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault();

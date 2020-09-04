@@ -1,3 +1,7 @@
+//
+// Created by Douglas Chung
+//
+
 //Event handling for when the page loads load then executes
 document.addEventListener('DOMContentLoaded', function () {
     addSpaceName();

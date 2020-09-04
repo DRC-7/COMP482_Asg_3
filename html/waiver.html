@@ -1,3 +1,13 @@
+<!--
+    WAIVER PAGE
+
+    Documentation for all of the Bootstrap elements retrieved from:
+    https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+    NOTE:
+    - Every single one of the HTML pages uses index.html as a starting point. 
+    - Most of the changes between pages are found between the <main></main> tags.
+-->
 <!doctype html>
 <html lang="en">
 
@@ -37,11 +47,6 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Recreation Facility</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -87,7 +92,7 @@
                     <div class="form-group col-md-6">
                         <label for="inputState">City</label>
                         <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
+                            <option value="">Choose...</option>
                             <option>Athabasca</option>
                             <option>Calgary</option>
                             <option>Edmonton</option>
@@ -97,7 +102,7 @@
                     <div class="form-group col-md-4">
                         <label for="inputProvince">Province</label>
                         <select id="inputProvince" class="form-control">
-                            <option selected>Choose...</option>
+                            <option value="">Choose...</option>
                             <option>Alberta</option>
                             <option>Other</option>
                         </select>
@@ -120,9 +125,9 @@
                         <br><br>
                     </div>
                 </div>
-            </form>
-            <a href="waiverConfirm.html"><button id="submitWaiver" type="submit" class="btn btn-primary">Submit
+                <button id="submitWaiver" type="submit" class="btn btn-primary">Submit
                     Waiver</button></a>
+            </form>
         </div>
 
     </main>
@@ -137,5 +142,6 @@
     </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/waiver.js"></script>
 
 </html>

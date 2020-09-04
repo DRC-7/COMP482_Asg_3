@@ -1,19 +1,15 @@
-// let LOGIN_STATE = false;
-
-// //Checks the status of login
-// function myState() {
-//     LOGIN_STATE = !LOGIN_STATE;
-//     return LOGIN_STATE;
-// }
+//
+// Created by Douglas Chung
+//
 
 //Event handler to show the logged in users name
 document.addEventListener('DOMContentLoaded', function () {
-
     loggedInState();
-    //Logs user out when clicking the logout button
+
+    //Event handler for logging out 
     document.querySelector('#logoutBtn').addEventListener('click', function () {
         loggedOutState();
-    });
+    })
 })
 
 //Event handler for logging in with email and password
@@ -32,10 +28,11 @@ document.querySelector('#signIn').addEventListener('click', (e) => {
         alert("Welcome Back!");
         window.location = '../index.html';
         loggedInState();
+    } else if (inputEmail === "" || inputPass === "") {
+        alert("Username and/or Password Field ---> EMPTY.");
     } else {
-        alert("The Username and Password Entered are not valid.");
+        alert("Username and/or Password Entered ---> INVALID.");
     }
-
 })
 
 //Adds the logged in information to the top right
@@ -51,8 +48,7 @@ function loggedInState() {
     hideLoginButton();
     showLogoutButton();
     showMenuButtons();
-    //hidePrompt();
-    //myState();
+    hidePrompt();
 }
 
 //Removes the logged in information in the top right
@@ -60,9 +56,8 @@ function loggedOutState() {
     showLoginButton();
     hideLogoutButton();
     hideMenuButtons();
-    //showPrompt();
+    showPrompt();
     document.querySelector('#loggedIn a').innerHTML = "";
-    //myState();
 }
 
 //Hides the "Log In or Sign Up Now!" Button

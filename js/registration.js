@@ -1,3 +1,7 @@
+//
+// Created by Douglas Chung
+//
+
 //Event handler for the "Create Account" button click
 document.querySelector('#createAccount').addEventListener('click', (e) => {
     e.preventDefault();

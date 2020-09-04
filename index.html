@@ -1,8 +1,17 @@
 <!--
-    Bootstrap HTML layout retrieved from:
-    https://getbootstrap.com/docs/4.5/examples/jumbotron/
--->
+    MAIN LANDING PAGE
 
+    Bootstrap HTML retrieved from:
+    https://getbootstrap.com/docs/4.5/examples/jumbotron/
+
+    Documentation for all of the Bootstrap elements retrieved from:
+    https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+    NOTE:
+    - Every single one of the HTML pages uses index.html as a starting point. 
+    - Modified from the original Bootstrap example.
+    - Most of the changes between pages are found between the <main></main> tags.
+-->
 <!doctype html>
 <html lang="en">
 
@@ -42,34 +51,11 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Recreation Facility</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <!--<li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Account</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>-->
             </ul>
             <span id="loggedIn" class="navbar-text">
                 <a class="nav-link active"></a>
@@ -136,13 +122,9 @@
                             &raquo;</a></p>
                 </div>
             </div>
-
             <hr>
-
         </div> <!-- /container -->
-
     </main>
-
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">&copy; 2020 Recreation Facility</p>
         <ul class="list-inline">
@@ -173,8 +155,6 @@
         }
         localStorage.setItem('StaticUser', JSON.stringify(staticUser));
     </script>
-
-
 </body>
 
 </html>
