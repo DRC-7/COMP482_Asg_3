@@ -100,7 +100,6 @@ function showMenuButtons() {
 //Hides the menu buttons for waivers, reservation
 function hideMenuButtons() {
     let buttons = document.querySelectorAll('#menuBtn');
-    console.log(buttons)
     for (b of buttons) {
         //console.log(b)
         b.style.display = "none";
