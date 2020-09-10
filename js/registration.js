@@ -29,8 +29,17 @@ function createAccountObj(e) {
 //Checks to see if localStorage is empty
 function checkLocalStorage() {
 
+    let account = JSON.parse(localStorage.getItem('UserAccount'));
+    let fName = account.FirstName;
+    let lName = account.LastName;
+    let email = account.Email;
+    let addr = account.Addr;
+
     //Doesn't fail as long as they enter a first name
-    if (localStorage.getItem('FirstName') !== "") {
+    if (fName !== "" &&
+        lName !== "" &&
+        email !== "" &&
+        addr !== "") {
         //Clicking "Ok" on the alert redirects back to the homepage.
         window.location = '../html/regisConfirm.html';
 
