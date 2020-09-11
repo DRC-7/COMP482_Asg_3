@@ -5,8 +5,8 @@
 //Event handler for the "Create Account" button click
 document.querySelector('#createAccount').addEventListener('click', (e) => {
     e.preventDefault();
-    checkLocalStorage();
     createAccountObj(e);
+    checkLocalStorage();
 })
 
 //Creates a Account Object and stores it in localStorage
@@ -34,16 +34,22 @@ function checkLocalStorage() {
     let lName = account.LastName;
     let email = account.Email;
     let addr = account.Addr;
+    let city = account.City;
+    let prov = account.Province;
+    let pcode = account.PCode;
 
     //Doesn't fail as long as they enter a first name
     if (fName !== "" &&
         lName !== "" &&
         email !== "" &&
-        addr !== "") {
+        addr !== "" &&
+        city !== "" &&
+        prov !== "" &&
+        pcode !== "") {
         //Clicking "Ok" on the alert redirects back to the homepage.
         window.location = '../html/regisConfirm.html';
 
     } else {
-        alert("\nThis Form Is Not Complete.\n\nPlease fill it out to continue.")
+        alert("\nThis Form Is Not Complete.\n\nPlease fill it out to continue.");
     }
 }
