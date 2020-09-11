@@ -28,7 +28,6 @@ function createAccountObj(e) {
 
 //Checks to see if localStorage is empty
 function checkLocalStorage() {
-    console.log("hello")
 
     let account = JSON.parse(localStorage.getItem('UserAccount'));
     let fName = account.FirstName;
@@ -49,7 +48,6 @@ function checkLocalStorage() {
         pcode !== "") {
         //Clicking "Ok" on the alert redirects back to the homepage.
         window.location = '../html/regisConfirm.html';
-        console.log('hiiiii')
 
     } else {
         alert("\nThis Form Is Not Complete.\n\nPlease fill it out to continue.");
