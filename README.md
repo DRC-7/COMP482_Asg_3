@@ -53,6 +53,7 @@ My programming mind is definitely rusty, the code that I wrote could be a lot cl
 
 ## Project Files
 ### GitHub Repo
-https://github.com/DRC-7/COMP482_Asg_3
+https://github.com/DRC-7/COMP482_HCI_Assignment_3
 ### YouTube Video
+https://youtu.be/TgsyLhmwbB0
 
