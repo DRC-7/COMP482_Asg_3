@@ -1,5 +1,5 @@
 # Implementation of a Online 'Recreation Facility' Website
-Assignment 3 - COMP 482: HCI
+Assignment 3 - COMP 482: Human Computer Interaction (Fall 2020 - Athabasca Online)
 
 ## Challenge
 Using a lo-fi prototype created in a previous assignment as a guiding point, implement the system.
